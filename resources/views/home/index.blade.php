@@ -92,7 +92,7 @@
                                     fill="#7367F0" />
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">AImagine</span>
+                            <!-- <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">AImagine</span> -->
                         </a>
                     </div>
                     <!-- Menu logo wrapper: End -->

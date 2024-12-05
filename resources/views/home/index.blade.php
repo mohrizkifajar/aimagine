@@ -29,8 +29,8 @@
         <link rel="stylesheet" href="/assets/vendor/css/pages/front-page.css" />
 
         <!-- Vendors CSS -->
-        <link rel="stylesheet" href="/assets/vendor/libs/node-waves/node-waves.css" />
-        <link rel="stylesheet" href="/assets/vendor/libs/nouislider/nouislider.css" />
+        <!-- <link rel="stylesheet" href="/assets/vendor/libs/node-waves/node-waves.css" /> -->
+        <!-- <link rel="stylesheet" href="/assets/vendor/libs/nouislider/nouislider.css" /> -->
         <link rel="stylesheet" href="/assets/vendor/libs/swiper/swiper.css" />
 
         <!-- Page CSS -->
@@ -114,6 +114,9 @@
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link fw-medium" aria-current="page" href="#landingHero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium" href="#landingReviews">Reviews</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
@@ -215,6 +218,84 @@
                 <div class="landing-hero-blank"></div>
             </section>
             <!-- Hero: End -->
+
+            <!-- Real customers reviews: Start -->
+            <section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
+                <!-- What people say slider: Start -->
+                <div class="container">
+                    <div class="row align-items-center gx-0 gy-4 g-lg-5">
+                        <div class="col-md-6 col-lg-5 col-xl-3">
+                            <div class="mb-3 pb-1">
+                                <span class="badge bg-label-primary">Real Customers Reviews</span>
+                            </div>
+                            <h3 class="mb-1"><span class="section-title">What people say</span></h3>
+                            <p class="mb-3 mb-md-5">
+                                See what our customers have to <br class="d-none d-xl-block" />
+                                say about their experience.
+                            </p>
+                            <div class="landing-reviews-btns">
+                                <button
+                                    id="reviews-previous-btn"
+                                    class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
+                                    type="button"
+                                >
+                                    <i class="ti ti-chevron-left ti-sm"></i>
+                                </button>
+                                <button id="reviews-next-btn" class="btn btn-label-primary reviews-btn scaleX-n1-rtl" type="button">
+                                    <i class="ti ti-chevron-right ti-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-7 col-xl-9">
+                            <div class="swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3">
+                                <div class="swiper" id="swiper-reviews">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card h-100">
+                                                <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                    <div class="mb-3">
+                                                        <img
+                                                            src="/assets/img/front-pages/branding/logo-1.png"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"
+                                                        />
+                                                    </div>
+                                                    <p>
+                                                        “Vuexy is hands down the most useful front end Bootstrap theme I've ever used. I can't wait
+                                                        to use it again for my next project.”
+                                                    </p>
+                                                    <div class="text-warning mb-3">
+                                                        <i class="ti ti-star-filled ti-sm"></i>
+                                                        <i class="ti ti-star-filled ti-sm"></i>
+                                                        <i class="ti ti-star-filled ti-sm"></i>
+                                                        <i class="ti ti-star-filled ti-sm"></i>
+                                                        <i class="ti ti-star-filled ti-sm"></i>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar me-2 avatar-sm">
+                                                            <img src="/assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" />
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-0">Cecilia Payne</h6>
+                                                            <p class="small text-muted mb-0">CEO of Airbnb</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- What people say slider: End -->
+            </section>
+            <!-- Real customers reviews: End -->
+
+            <section class="section-py"></section>
 
             <!-- FAQ: Start -->
             <section id="landingFAQ" class="section-py bg-body landing-faq">
@@ -380,7 +461,7 @@
                 <div class="container">
                     <div class="row gx-0 gy-4 g-md-5">
                         <div class="col-lg-5">
-                            <a href="landing-page.html" class="app-brand-link mb-4">
+                            <a href="/" class="app-brand-link mb-4">
                                 <span class="app-brand-logo demo">
                                     <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -427,55 +508,6 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <h6 class="footer-title mb-4">Demos</h6>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <a href="../vertical-menu-template/" target="_blank" class="footer-link">Vertical Layout</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Horizontal Layout</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Bordered Layout</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">Semi Dark Layout</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Dark Layout</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <h6 class="footer-title mb-4">Pages</h6>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <a href="pricing-page.html" class="footer-link">Pricing</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="payment-page.html" class="footer-link">Payment<span class="badge rounded bg-primary ms-2">New</span></a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="checkout-page.html" class="footer-link">Checkout</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="help-center-landing.html" class="footer-link">Help Center</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="../vertical-menu-template/auth-login-cover.html" target="_blank" class="footer-link">Login/Register</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <h6 class="footer-title mb-4">Download our app</h6>
-                            <a href="javascript:void(0);" class="d-block footer-link mb-3 pb-2">
-                                <img src="/assets/img/front-pages/landing-page/apple-icon.png" alt="apple icon" />
-                            </a>
-                            <a href="javascript:void(0);" class="d-block footer-link">
-                                <img src="/assets/img/front-pages/landing-page/google-play-icon.png" alt="google play icon"/>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -491,40 +523,6 @@
                         <a href="https://pixinvent.com" target="_blank" class="fw-medium text-white footer-link">Pixinvent,</a>
                         <span class="footer-text"> Made with ❤️ for a better web.</span>
                     </div>
-                    <div>
-                        <a href="https://github.com/pixinvent" class="footer-link me-3" target="_blank">
-                            <img
-                                src="/assets/img/front-pages/icons/github-light.png"
-                                alt="github icon"
-                                data-app-light-img="front-pages/icons/github-light.png"
-                                data-app-dark-img="front-pages/icons/github-dark.png"
-                            />
-                        </a>
-                        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-3" target="_blank">
-                            <img
-                                src="/assets/img/front-pages/icons/facebook-light.png"
-                                alt="facebook icon"
-                                data-app-light-img="front-pages/icons/facebook-light.png"
-                                data-app-dark-img="front-pages/icons/facebook-dark.png"
-                            />
-                        </a>
-                        <a href="https://twitter.com/pixinvents" class="footer-link me-3" target="_blank">
-                            <img
-                                src="/assets/img/front-pages/icons/twitter-light.png"
-                                alt="twitter icon"
-                                data-app-light-img="front-pages/icons/twitter-light.png"
-                                data-app-dark-img="front-pages/icons/twitter-dark.png"
-                            />
-                        </a>
-                        <a href="https://www.instagram.com/pixinvents/" class="footer-link" target="_blank">
-                            <img
-                                src="/assets/img/front-pages/icons/instagram-light.png"
-                                alt="google icon"
-                                data-app-light-img="front-pages/icons/instagram-light.png"
-                                data-app-dark-img="front-pages/icons/instagram-dark.png"
-                            />
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>
@@ -534,11 +532,11 @@
         <!-- build:js assets/vendor/js/core.js -->
         <script src="/assets/vendor/libs/popper/popper.js"></script>
         <script src="/assets/vendor/js/bootstrap.js"></script>
-        <script src="/assets/vendor/libs/node-waves/node-waves.js"></script>
+        <!-- <script src="/assets/vendor/libs/node-waves/node-waves.js"></script> -->
         <!-- endbuild -->
 
         <!-- Vendors JS -->
-        <script src="/assets/vendor/libs/nouislider/nouislider.js"></script>
+        <!-- <script src="/assets/vendor/libs/nouislider/nouislider.js"></script> -->
         <script src="/assets/vendor/libs/swiper/swiper.js"></script>
 
         <!-- Main JS -->
